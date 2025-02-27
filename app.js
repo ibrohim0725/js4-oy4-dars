@@ -148,7 +148,7 @@ Array.prototype.mySort = function (order) {
           this[j] = this[j + 1];
           this[j + 1] = temp;
         }
-      } else if (order === "desc") {
+      } else {
         if (this[j] < this[j + 1]) {
           let temp = this[j];
           this[j] = this[j + 1];
@@ -160,4 +160,4 @@ Array.prototype.mySort = function (order) {
   return this;
 };
 let arr5 = [15, 68, 95, 26, 3, 15, 478];
-console.log(arr5.mySort("desc"));
+console.log(arr5.mySort(""));
